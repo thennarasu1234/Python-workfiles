@@ -105,3 +105,6 @@ print = (sep.join(str))
 
 str = "The Walking Dead"
 print(str.lower())
+
+str_5="nirmla"
+str_5.zfill(10)
