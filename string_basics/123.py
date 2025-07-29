@@ -103,8 +103,56 @@ print = (sep.join(str))
 
 # lower() method of python
 
-str = "The Walking Dead"
-print(str.lower())
+str_1 = "The Walking Dead"
+print(str_1.lower())
 
-str_5="nirmla"
-str_5.zfill(10)
+# lstrip() method in python
+
+str = "######STRANGER THINGS"
+
+print(str . lstrip("#"))
+
+# replace() method in python
+
+str_3 = "This is demo. This is another demo"
+print(str_3.replace("demo","text", 3))
+
+str_4 = "This is our example"
+print(str_4.replace("example", "demo"))
+
+#rfind() method in python
+
+str_3 = "This is demo. This is another demo"
+print(str_3.rfind("demo"))
+
+# rindex() method in python
+
+str_4 = "This is test. This is another test"
+print(str_4.rindex("test"))
+
+
+#rjust() method in python
+
+str = "Amercian Vandal"
+print(str.rjust(25,"A"))
+
+
+#rsplit() method in python
+
+str = "Football, Archery, Cricket, Squash, Hockey, Volleyball"
+print(str.rsplit(",",2))
+
+# rstrip() method in python
+
+str = "STRANGER THINGS#####"
+print(str.rstrip("#"))
+
+# split() method in python
+
+str = "One##Two##Three##Four"
+print(str.split("##",1))
+
+#splitlines() method in pyton
+
+str = "One\nTwo\nThree\nFour"
+print(str.splitlines(False))
