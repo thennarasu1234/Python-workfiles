@@ -63,7 +63,7 @@ dict_2.fromkeys(a,"abc")
 # update
 
 dict_1 = {"name":"thenn", "Rno":123,"course":"BE"}
- print(dict_1)
+print(dict_1)
 {"name": "thenn"}
 dict_1.update({"Rno":123,"course":"BE"})
 print(dict_1)
@@ -76,8 +76,12 @@ dict_3.setdefault("Rno",123)
 
 # get
 
-dict_6 = {"name":"thenn",
-          "Rno":123,
-          "course":"BE"}
-print(dict_6)
-print(dict_6.get("name"))
+dict_3= {"name":"thenn", "Rno":123,"course":"BE"}
+print(dict_3)
+print(dict_3.get("name"))
+
+
+# items
+
+dict_1 = {"name":"thenn", "Rno":123,"course":"BE"}
+print(dict_1.items())

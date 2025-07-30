@@ -24,6 +24,7 @@ dir(list_1)
 list_2=["Nirmal","ajay","thennarasu"]
 list_2.sort(reverse=True)
 list_2
+
 # reverse
 list_2.reverse()
 list_2
@@ -51,4 +52,45 @@ list_2 = [1,2,3,4]
 list_2.remove(3)
 print(list_2)
 
+# pop
 
+list_1 = [10,20,30,40,50,]
+list_1.pop(2)
+print(list_1)
+
+# clear
+
+list_3 = [1,2,3,4,]
+list_3.clear()
+print(list_3)
+
+# index
+
+list_5 = [100,200,300,400,500]
+list_5.index(200)
+print(list_5)
+
+# extend
+
+list_1 = ['thenn','mugi']
+list_2 = [1,2,3]
+list_1.extend(list_2)
+print(list_1)
+
+# insert
+
+list_3 = [1,2,3,4,5]
+list_3.insert(2,6)
+print(list_3)
+
+# count
+
+list_5 = [1,2,3,2,4,5]
+list_5.count(2)
+
+
+# copy
+
+list_4 = [100,200,300]
+list = list_4.copy()
+print(list_4)
