@@ -155,4 +155,40 @@ print(str.split("##",1))
 #splitlines() method in pyton
 
 str = "One\nTwo\nThree\nFour"
-print(str.splitlines(False))
+print(str.splitlines(True))
+
+# Startswith() mehtod in python
+
+str = "This is demo. This is another demo"
+print(str.startswith("is", 15, 20))
+
+# swapcase() method in python
+
+str = "This is demo. This is another demo"
+print(str.swapcase())
+
+#title() method in pythoon
+
+str = "my name is thenn"
+print(str.title())
+
+# upper() method in python
+
+str = "Monkey On The Tree"
+print(str.upper())
+
+# zfill() method in python
+
+str = "Wow!"
+print(str.zfill(9))
+
+str_1 = "123.456"
+print(str_1.zfill(14))
+
+# strip() method in python
+
+str = "    10.50    "
+print(str.strip())
+
+
+
