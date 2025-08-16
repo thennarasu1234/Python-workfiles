@@ -1,63 +1,199 @@
-# dir(str)
-# dir("")
-# dir('')
-dir("""""")
+# capitalize() method in python
+string = "my name is thenn"
+print(string.capitalize())
 
-"""
-'capitalize', 'casefold', 'center', 'count', 
-'encode', 'endswith', 'expandtabs', 'find', 'format',
-'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 
-'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric',
-'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust',
-'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 
-'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 
-'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate',
-'upper', 'zfill'
-"""
 
-# 1. capitalize
-# this method will change the first char of the string to uppercase and keeps the other in lowercase
-name_1="tennaraSu"
-print(name_1)
-name_1.capitalize()
-print(name_1)
+#casefold() method in python
 
-name_2='TENNARASU'
-name_2.capitalize()
+str_1 = "My name is THENN"
+print(str.casefold())
 
-# 2. Casefold
-# it converts to lowercase
-name_3="tennarasu"
-name_3.casefold()
+#center() method in python
 
-# 3. center
-# this will makkes the string to be at center 
-name_4="tennarasu"
-name_4.center(15,"*")
+str = "THENN"
+print(str.center(20,"#"))
 
-# 4. Count
 
-name_4="tennarasu"
+#count()method in python
 
-para_2="""
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac consequat mauris, suscipit venenatis enim. Proin pretium dolor ac molestie vestibulum. Quisque ante nulla, rhoncus vitae libero vitae, pharetra sagittis leo. Suspendisse sit amet mi vitae lacus faucibus pharetra. Suspendisse lacus leo, molestie vitae orci eget, cursus laoreet odio. Quisque congue dui metus, quis elementum tortor euismod vel. Vivamus varius lorem id sem pellentesque consequat.
+str = "This is thenn. This is another thenn."
+print(str.count("thenn,6,24"))
 
-Sed ac mattis orci.\nInteger congue nisl nisi, mattis hendrerit sapien eleifend ut. \nNullam imperdiet augue vel tortor aliquam, eget pharetra magna convallis. Sed volutpat lacinia purus vehicula dignissim. Nam ultrices turpis et leo malesuada, ut porta diam euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque feugiat fermentum eleifend. Pellentesque quis maximus lorem.
+#find() method in python
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. \nInteger viverra sapien quis purus efficitur, sed viverra nibh tempus. Aenean dapibus viverra lobortis. Aliquam viverra consequat dui cursus pellentesque. Morbi hendrerit ut turpis non imperdiet. Cras cursus imperdiet orci, ut molestie orci hendrerit ut. Nulla viverra fermentum ligula, eu consequat quam porta id. Proin posuere, turpis quis tincidunt eleifend, tellus dui posuere mi, vel scelerisque urna purus quis metus. Nam erat purus, ultricies et gravida sed, consequat ac neque. Mauris arcu velit, consectetur sit amet nulla a, congue fringilla ligula. Nunc rhoncus vitae augue at pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin id velit nec nibh bibendum commodo. Maecenas sodales id lacus ut dignissim. Proin vel enim id justo dignissim aliquet.
+str = "This is first text. This is second text"
+print(str.find("text", 20, 40))
 
-Proin et auctor risus, eget sagittis turpis. \n ullam eget nisl commodo, dapibus ante sit amet, tincidunt nunc. Curabitur scelerisque sapien ac metus porta, id tempus odio luctus. Ut in mollis lectus, sed pretium nibh. Duis maximus, nibh sit amet scelerisque finibus, libero lorem fringilla augue, a blandit nisi orci tincidunt tellus. Cras eleifend purus ipsum, at ullamcorper leo lacinia sit amet. Fusce congue non est vel pharetra. Aliquam erat volutpat. Donec sed feugiat erat, sit amet commodo ipsum. Pellentesque maximus rhoncus efficitur. Vestibulum lobortis in erat sit amet elementum. Etiam metus nisi, ornare at velit non, euismod ultricies justo. Maecenas pharetra risus luctus erat tristique, ac pulvinar nisi lacinia.
-"""
-para_2.count("s")
-# with start
-para_2.count("s",20)
+# endswith() method in python
 
-# with end
-para_2.count("s",20,35)
+str = "This is demo text. This is demo text2"
+print(str.endswith("text2"))
 
-# 5. endswith
+#expandtabs() method in python
 
-name_6="tennarasu"
-name_6.endswith("tenn",0,4)
+str = "D\te\tm\to\t"
+print(str.expandtabs())
+print(str.expandtabs(2))
 
-# complete all the methods with proper explanation commands
+#index() method in python
+
+str = "This is first text"
+print(str.index('i'))
+
+#isalnum() method in python
+
+str = "Thennarasu2005"
+print(str.isalnum())
+
+#isalpha() method in python
+
+str = "Thennarasu"
+print(str.isalpha())
+
+#isdecimal() method in python
+
+str = "44"
+print(str.isdecimal())
+
+# isidentifier() method in python
+
+str = "thenn33"
+print(str.isidentifier())
+
+#islower() method of python
+
+str = "my name is thenn"
+print(str.islower())
+
+# isnumeric() method is python
+
+str = "1234"
+print(str.isnumeric())
+
+str = "87868"
+print(str.isnumeric())
+
+# isprintable() method in python
+
+str = "sylvesteer"
+print(str.isprintable())
+
+# isspace() method in python
+
+str = "   "
+print(str.isspace())
+
+# istitle() method in python
+
+str = "Amit"
+print(str.istitle())
+
+# isupper() method in python
+
+str = "MARK RUFFALO "
+print(str.isupper())
+
+# join() method in python
+
+str = {"Main", "Purpose", "Thing"}
+
+sep = "&&"
+
+print = (sep.join(str))
+
+# lower() method of python
+
+str_1 = "The Walking Dead"
+print(str_1.lower())
+
+# lstrip() method in python
+
+str = "######STRANGER THINGS"
+
+print(str . lstrip("#"))
+
+# replace() method in python
+
+str_3 = "This is demo. This is another demo"
+print(str_3.replace("demo","text", 3))
+
+str_4 = "This is our example"
+print(str_4.replace("example", "demo"))
+
+#rfind() method in python
+
+str_3 = "This is demo. This is another demo"
+print(str_3.rfind("demo"))
+
+# rindex() method in python
+
+str_4 = "This is test. This is another test"
+print(str_4.rindex("test"))
+
+
+#rjust() method in python
+
+str = "Amercian Vandal"
+print(str.rjust(25,"A"))
+
+
+#rsplit() method in python
+
+str = "Football, Archery, Cricket, Squash, Hockey, Volleyball"
+print(str.rsplit(",",2))
+
+# rstrip() method in python
+
+str = "STRANGER THINGS#####"
+print(str.rstrip("#"))
+
+# split() method in python
+
+str = "One##Two##Three##Four"
+print(str.split("##",1))
+
+#splitlines() method in pyton
+
+str = "One\nTwo\nThree\nFour"
+print(str.splitlines(True))
+
+# Startswith() mehtod in python
+
+str = "This is demo. This is another demo"
+print(str.startswith("is", 15, 20))
+
+# swapcase() method in python
+
+str = "This is demo. This is another demo"
+print(str.swapcase())
+
+#title() method in pythoon
+
+str = "my name is thenn"
+print(str.title())
+
+# upper() method in python
+
+str = "Monkey On The Tree"
+print(str.upper())
+
+# zfill() method in python
+
+str = "Wow!"
+print(str.zfill(9))
+
+str_1 = "123.456"
+print(str_1.zfill(14))
+
+# strip() method in python
+
+str = "    10.50    "
+print(str.strip())
+
+str_1="nirmal{2}{1}{0}"
+str_1.format(" kumaar","ajay","ajk")
+str
+dict_for={"name":"nirmal"}
+str_2="nirmal {name}"
+str_2.format_map(dict_for)
+

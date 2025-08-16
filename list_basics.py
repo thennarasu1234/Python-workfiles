@@ -20,12 +20,15 @@ list_1
 dir(list_1)
 
 
-# sort
+# ---> sort
+# ---> sort the function ascending order
+
 list_2=["Nirmal","ajay","thennarasu"]
 list_2.sort(reverse=True)
 list_2
 
-# reverse
+# ---> reverse
+# ---> reverse the list in the place
 list_2.reverse()
 list_2
 
@@ -45,52 +48,38 @@ list_5[3][1]
 # 3d
 list_6=[1,2,3,[2,3,4,[5,6,7]]]
 list_6[3][3][2]
+ 
 
-# remove
+ # ---> copy
+ # ---> A list of copy()  creates a new element
+ # ---> But copy referes the element, if the element are mutable 
+ # ---> Changes will affeect both side
 
-list_2 = [1,2,3,4]
-list_2.remove(3)
+list_1 = [1,2,3,4,5,6]
+print(list_1)
+
+list_2 = list_1.copy()
 print(list_2)
 
-# pop
+# ---> index
+# ---> the element index() access the first element
 
-list_1 = [10,20,30,40,50,]
-list_1.pop(2)
-print(list_1)
+list_4 = ["thennarasu","lufy","lucky","john","monster","vishal"]
+print(list_4)
 
-# clear
+print(list_4[1:2])
+print(list_4[2:5])
 
-list_3 = [1,2,3,4,]
-list_3.clear()
-print(list_3)
-
-# index
-
-list_5 = [100,200,300,400,500]
-list_5.index(200)
+list_5 = ["1","2","3","4"]
 print(list_5)
 
-# extend
+print(list_5[1:2])
+print(list_5[2:5])
 
-list_1 = ['thenn','mugi']
-list_2 = [1,2,3]
-list_1.extend(list_2)
-print(list_1)
+# ---> remove
+# ---> the element remove() , it remove the element in the list
 
-# insert
+list_6 = ["hari","mughi","thenn","aghi"]
+list_6.remove("aghi")
+print(list_6)
 
-list_3 = [1,2,3,4,5]
-list_3.insert(2,6)
-print(list_3)
-
-# count
-
-list_5 = [1,2,3,2,4,5]
-list_5.count(2)
-
-
-# copy
-
-list_4 = [100,200,300]
-list = list_4.copy()
-print(list_4)

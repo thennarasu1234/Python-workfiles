@@ -48,8 +48,8 @@ dict_1.get("Rno")
 
 # pop
 
-dict_1 = {"name":"thenn", "Rno":123,"course":"BE"}
-dict_1.pop("course","BE")
+dict_1 = {"name":"thenn", "Rno":123,"course":"BE","name":"ajay"}
+dict_1.pop("ajay","not found")
 print(dict_1)
 dict_1.popitem()
 
