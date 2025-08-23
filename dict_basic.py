@@ -13,7 +13,6 @@ dict_3["nirmal"]
 # mutable
 dict_3["nirmal"]="Completed class"
 print(dict_3)
-
 dir(dict_3)
 
 # 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values'

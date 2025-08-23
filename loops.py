@@ -137,6 +137,20 @@ if name in fruits:
 else:
     print(f"{name} does not exists in the list")
 
+# make it an ascending order using loop
+
+# Given list
+numbers = [20, 30, 10, 55]
+
+# Bubble sort using loops
+for i in range(len(numbers)):
+    for j in range(len(numbers) - i - 1):
+        if numbers[j] > numbers[j + 1]:
+            # Swap elements
+            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+
+print("Sorted list in ascending order:", numbers)
+
 
 # Get a list of words from a single line of  input like name = "Nirmal is a boy"
 # And store it word in list using string method
@@ -157,17 +171,54 @@ for i in range(1,101):
     total += i
     print(total)
 
-# make it an ascending order using loop
+a=10
+b=20
+c=30
 
-# Given list
-numbers = [20, 30, 10, 55]
+if a>b and a>c:
+    print("a is greater number")
+elif b>a and b>c:
+    print("b is greater number")
+else:
+    print("c is greater number")
 
-# Bubble sort using loops
-for i in range(len(numbers)):
-    for j in range(len(numbers) - i - 1):
-        if numbers[j] > numbers[j + 1]:
-            # Swap elements
-            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+# nested if condition
+a=40
 
-print("Sorted list in ascending order:", numbers)
+if a>b:
+    if a>c:
+        print("a is greater")
+    else:
+        print("c is greater")
+else:
+    if b>c:
+        print("b is greater")
+    else:
+        print("c is greater")
+
+list_1=[[1,2,3],[4,5,6],[7,8,9]]
+
+# * 
+# * * 
+# * * * 
+# * * * * 
+# * * * * * 
+
+n=5
+for i in range(1,n+1):
+    print("* "*i)
+
+
+for i in range(n+1,0,-1):
+    print(i)
+
+for i in range(n,0,-1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+
+n=5
+while n!=0:
+    print("* "*n)
+    n-=1
 
