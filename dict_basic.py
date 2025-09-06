@@ -40,7 +40,8 @@ dict_1.keys()
 
 # values
 
-dict_1 = {"name":"thenn", "Rno":123,"course":"BE"}
+dict_1 = {"name":[1,2,3,4], "Rno":123,"course":"BE"}
+dict_1["name"][1]
 dict_1.values()
 dict_1.get("name")
 dict_1.get("Rno")

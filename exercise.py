@@ -190,5 +190,14 @@ else:
     grade = "fail"
     print(f"average:{average},grade:{grade}")
     
+from inv import clone_items,normalize,restock
+raw = ({"name":"   apple","qty":"3"}, {"name":"banana  ","qty":"12"}, {"name":"oRange","qty":"0"})
+clean=normalize(*raw)
+copy1 = clone_items(clean)              # shallow
+print(copy1)
+copy2 = clone_items(clean, deep=True)   # deep
+print(copy2)
+print(restock(copy2))  # {"Apple":7, "Banana":0, "Orange":10}
+
 
 
