@@ -15,3 +15,21 @@ else:
     print("no error")
 finally:
     print("anyway i execute")
+
+
+# new
+
+n = 10
+
+try:
+    num1 = int(input("enter a number:"))
+    num2 = int(input("enter a another number:"))
+    result = num1/num2
+    print(*"result:",result)
+
+except ZeroDivisionError:
+    print("Error : cannot divided by zero!")
+except ValueError:
+    print("Error: please enter only number!")
+finally:
+    print("execution completed")

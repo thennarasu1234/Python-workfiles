@@ -16,5 +16,9 @@ file_3.write("nirmal")
 file_3.close()
 
 
-with open("sample1.txt","r") as F:
-    F.readline()
+# Create new file with x
+
+f = open("xfile.txt", "x")
+f.write("Hello, create with x mode")
+f.close()
+
