@@ -89,26 +89,29 @@ length_map = {w: len(w) for w in words if len(w) > 4}
 first_letters = {w[0].lower() for w in words}
 
 # Higher-order functions + nonlocal state
-# Exercise--> Create maek_discounted_total(discount) returning a function
+# Exercise--> Create make_discounted_total(discount) returning a function
 # Bill(*items) where each item is (name,price).
 # Bill rememeber count of times it was called(use nonlocal) and applies discount only from the 3rd call onwards
 
 
 def make_discounted_total(discount):
-    count = 0  
+    count = 0
     def bill(*items):
         nonlocal count
         count += 1
         total = sum(price for _, price in items)
-        if count >= 3:   
+        if count >= 3:
             total *= (1 - discount)
         return total
-    return bill        
+    return bill
+
+# Example usage:
 b = make_discounted_total(0.1)
-print(b(("pen", 10), ("book", 90)))
-print(b(("bag", 500),)) 
-print(b(("shoes", 1000),))        
-print(b(("laptop", 2000),)) 
+print(b(("pen", 10), ("book", 90)))  # No discount applied
+print(b(("bag", 500),))
+print(b(("shoes", 1000),))
+print(b(("laptop", 2000),))
+
 
 
 # Mini-project : Module + Copies + Comprehensions + args
@@ -132,5 +135,5 @@ def normalize(*record):
 def restock(items,target=10):
     dict_1={}
     for i in range(len(items["name"])):
-        dict_1[items["name"][i]]=max(0,target-items["qty"][i])
+        dict_1[items["name"][i]] = max(0,target-items["qty"][i])
     return dict_1

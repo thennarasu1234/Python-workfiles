@@ -3,7 +3,7 @@
 
 import smtplib
 
-recipient_email = "rab874972@gmail.com"
+recipient_email = "thenn9342@gmail.com.com"
 sender_email = "thennarasut415@gmail.com"  # Use full email address
 app_password = "elix yfvm ippo aabs"  # Replace with your Gmail App Password
 
@@ -23,20 +23,3 @@ server.login(sender_email,app_password)
 for i in list_1:
     server.sendmail(sender_email,i,message)
 server.quit()
-
-
-# IMPORTANT: For Gmail, use an App Password, not your regular password.
-# See: https://support.google.com/accounts/answer/185833
-
-import smtplib
-
-recipient_email = "thenn469142@gmail.com"
-sender_email = "thennarasut415@gmail.com"
-app_password = "crwr nzby chsi metj"   # Replace with your Gmail App Password
-
-smtp_server = smtplib.SMTP("smtp.gmail.com", 587)
-smtp_server.starttls() 
-smtp_server.login(sender_email,app_password)
-message = "I am Thenn"
-smtp_server.sendmail(sender_email, recipient_email, message)
-smtp_server.quit()
