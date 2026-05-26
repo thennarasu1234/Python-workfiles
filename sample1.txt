@@ -1,1 +1,22 @@
-Hey buddyHey buddynirmal
+%ch; --> find last (ending) letter of the word                ---> example (chicken)
+ch%; --> find first (starting) letter oof the word 
+%ch%; -> find (center) of the word
+
+
+11111111111111111111111111111111111111112222222222222222222222222p]  
+\ --> use to cut the word
+and --> only use different column
+
+
+"^B" --> ^ is use to identify the first letter of the word ---> eg, Bombay,Chennai  (output--> Bombay) 
+
+"F$" --> find ending letter of the word  -----------------------> eg , leaf,fruit  (output--> leaf)
+
+
+rexgep"1[a-z]   ---> it mean taking word after the numerical (1) ---> eg, 1 liter , 777  (output--> 1 liter)
+
+
+
+
+join concept
+operator concept
